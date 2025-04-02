@@ -1,0 +1,14 @@
+{
+    "__generated": {
+      "info": "CMIMobileClients.generatetranslations",
+      "date": "2020-01-16 15:31:25"
+    },
+    "Wortbegehren": {
+      "Diskussion": "Diskussion",
+      "EigenesWortbegehren": "Dies ist Ihr eigenes Wortbegehren",
+      "KeineWortbegehrenEingetragen": "Im Moment sind keine Wortbegehren eingetragen",
+      "WortbegehrenAnzeigen": "Wortbegehren anzeigen",
+      "WortbegehrenVerbergen": "Wortbegehren verbergen",
+      "WortbegehrenVonBenutzer": "Dies ist das Wortbegehren von {0}"
+    }
+}
