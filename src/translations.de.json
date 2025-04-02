@@ -9,6 +9,7 @@
       "KeineWortbegehrenEingetragen": "Im Moment sind keine Wortbegehren eingetragen",
       "WortbegehrenAnzeigen": "Wortbegehren anzeigen",
       "WortbegehrenVerbergen": "Wortbegehren verbergen",
-      "WortbegehrenVonBenutzer": "Dies ist das Wortbegehren von {0}"
+      "WortbegehrenVonBenutzer": "Dies ist das Wortbegehren von {0}",
+        "Testtranslation": "Dies ist ein qualifizierter Test"
     }
 }
