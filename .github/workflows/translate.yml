@@ -9,8 +9,21 @@ jobs:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
+
+    # Checkout action manually bc branch is not merged
+    - name: checkout cmi-xlifftool
+      uses: actions/checkout@v2
+      with: 
+        repository: CMInformatik/cmi-xlifftool
+        ref: feature/NO-TICKET_xliff_2_1
+        token: ${{ secrets.PAT_TOKEN }}
+        path: ./.github/cmi-xlifftool
+
+    - name: checkout code
+      uses: actions/checkout@v2
+
     - name: translate
-      uses: CMInformatik/cmi-xlifftool@feature/NO-TICKET_xliff_2_1
+      uses: ./.github/cmi-xlifftool
       with:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
