@@ -32,4 +32,5 @@ jobs:
         DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
         TRANSLATION_ROOT: ./.github/repo/src
         COMMIT_MESSAGE: Translations
+        XLIFF_TOOL_IMAGE: cmigianluca/cmi-xliff-tool:latest
 
