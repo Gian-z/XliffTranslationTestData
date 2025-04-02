@@ -1,0 +1,20 @@
+name: Translate ressources
+
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  translation:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+    - name: translate
+      uses: CMInformatik/cmi-xlifftool@feature/NO-TICKET_xliff_2_1
+      with:
+        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+        DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
+        TRANSLATION_ROOT: ./src
+        COMMIT_MESSAGE: Translations
+
