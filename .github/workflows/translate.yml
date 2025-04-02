@@ -21,6 +21,8 @@ jobs:
 
     - name: checkout code
       uses: actions/checkout@v2
+      with:
+        path: ./.github/repo
 
     - name: translate
       uses: ./.github/cmi-xliff-tool
@@ -28,6 +30,6 @@ jobs:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
         DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
-        TRANSLATION_ROOT: ./src
+        TRANSLATION_ROOT: ./.github/repo/src
         COMMIT_MESSAGE: Translations
 
