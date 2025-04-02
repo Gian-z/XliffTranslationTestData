@@ -11,19 +11,19 @@ jobs:
     steps:
 
     # Checkout action manually bc branch is not merged
-    - name: checkout cmi-xlifftool
+    - name: checkout cmi-xliff-tool
       uses: actions/checkout@v2
       with: 
-        repository: CMInformatik/cmi-xlifftool
+        repository: CMInformatik/cmi-xliff-tool
         ref: feature/NO-TICKET_xliff_2_1
         token: ${{ secrets.PAT_TOKEN }}
-        path: ./.github/cmi-xlifftool
+        path: ./.github/cmi-xliff-tool
 
     - name: checkout code
       uses: actions/checkout@v2
 
     - name: translate
-      uses: ./.github/cmi-xlifftool
+      uses: ./.github/cmi-xliff-tool
       with:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
