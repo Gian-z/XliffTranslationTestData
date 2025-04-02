@@ -12,7 +12,7 @@ jobs:
 
     # Checkout action manually bc branch is not merged
     - name: checkout cmi-xliff-tool
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with: 
         repository: CMInformatik/cmi-xliff-tool
         ref: feature/NO-TICKET_xliff_2_1
@@ -20,7 +20,7 @@ jobs:
         path: ./.github/cmi-xliff-tool
 
     - name: checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         path: ./.github/repo
 
