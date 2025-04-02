@@ -1,8 +1,11 @@
-{
-    "Wortbegehren": {
-      "Diskussion": "Discussion",
-      "EigenesWortbegehren": "C'est votre propre demande de parole",
-      "KeineWortbegehrenEingetragen": "Aucune demande de parole n'est actuellement saisie.",
-      "WortbegehrenAnzeigen": "Afficher demande de parole",
-    }
+﻿{
+  "Wortbegehren": {
+    "Diskussion": "Discussion",
+    "EigenesWortbegehren": "C'est votre propre demande de parole",
+    "KeineWortbegehrenEingetragen": "Aucune demande de parole n'est actuellement saisie.",
+    "Testtranslation": "Il s'agit d'un test qualifié",
+    "WortbegehrenAnzeigen": "Afficher demande de parole",
+    "WortbegehrenVerbergen": "Cacher son désir de parler",
+    "WortbegehrenVonBenutzer": "Ceci est la demande de parole de {0}."
+  }
 }
